@@ -1,4 +1,4 @@
-userInput = input(" What's the weather like today? (sunny/rainy/cold)")
+userInput = input(" What's the weather like today? (sunny/rainy/cold): ")
 
 match userInput:
     case "sunny":
