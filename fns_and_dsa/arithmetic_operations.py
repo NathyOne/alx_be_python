@@ -11,3 +11,6 @@ def perform_operation(num1: float, num2: float, operation: str):
                 print(num1/num2)
         case "*":
             return num1*num2
+        case _:
+            print(f"Unknown operation: {operation}")
+            return None
