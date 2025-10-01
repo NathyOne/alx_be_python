@@ -1,25 +1,13 @@
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2, operation):
     match operation:
         case "+":
-            result = num1 + num2
-            print(result)
-            return result
+            print(num1 + num2)
         case "-":
-            result = num1 - num2
-            print(result)
-            return result
+            print(num1 - num2)
         case "/":
             if num2 == 0:
                 print("can't divide by zero")
-                return None
             else:
-                result = num1 / num2
-                print(result)
-                return result
+                print(num1 / num2)
         case "*":
-            result = num1 * num2
-            print(result)
-            return result
-        case _:
-            print(f"Unknown operation: {operation}")
-            return None
+            print(num1 * num2)
