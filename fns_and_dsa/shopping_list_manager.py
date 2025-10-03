@@ -13,22 +13,26 @@ def display_menu():
 
 
 def main():
+    shopping_list = []
     while True:
         display_menu()
-        shopping_list = []
         choice = int(input("Enter your choice: "))
         if choice == 1:
-            item = input("add the item of your choice")
+            item = input("add the item to add: ")
             shopping_list.append(item)
+            print(f"item {item} added sucessfully!")
         elif choice == 2:
-            item = input("enter the item you want to remove")
+            item = input("enter the item you want to remove: ")
             shopping_list.remove(item)
+            print(f"item {item} removed sucessfully!")
         elif choice == 3:
-            print("the list is ", shopping_list)
+            print("the lists are: ")
+            for item in shopping_list:
+                print(item)
         elif choice == 4:
             break
         else:
-            print("you're input is incorrect please choose again")
+            print("you're input is incorrect please choose again!")
 
 
 main()
