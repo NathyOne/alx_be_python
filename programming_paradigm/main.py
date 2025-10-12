@@ -8,22 +8,24 @@ def main():
     amount = BankAccount(deposit_amount)
 
     if amount:
-        print(f"you have sucessfully deposited: {amount.account_balance}")
+        print(f"deposited: {amount.account_balance}")
     else:
         print("wrong input")
 
     option = int(
-        input(f"enter the operation you want to perform. \n 1 = withdraw\n 2 = deposit\n 3 = show balance"))
+        input(f"enter the operation you want to perform. \n 1 = withdraw\n 2 = deposit\n 3 = show balance\n"))
 
     if option == 1:
         withdraw = float(input("Enter the amount you want to withdraw: "))
-        return amount.withdraw(withdraw)
+        amount.withdraw(withdraw)
+        print(f"withdrew: ${withdraw}")
     elif option == 2:
         deposit = float(input("enter the amount you want to deposit: "))
+        amount.deposit(deposit)
+        print(f"deposited: ${deposit}")
 
-        return amount.deposit(deposit)
     elif option == 3:
-        return amount.display_balance
+        amount.display_balance()
 
 
 main()
