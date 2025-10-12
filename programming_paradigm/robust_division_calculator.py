@@ -4,4 +4,4 @@ def safe_divide(numerator, denominator):
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
     except (ValueError, TypeError):
-        return "Error: Non-numeric input provided"
+        return "Error: Please enter numeric values only."
