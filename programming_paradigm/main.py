@@ -30,16 +30,43 @@
 
 # main()
 
-from robust_division_calculator import safe_divide
+# from robust_division_calculator import safe_divide
+
+
+# def main():
+#     numerator = float(input("enter numerator: "))
+#     denominator = float(input("enter denominator: "))
+
+#     result = safe_divide(numerator, denominator)
+
+#     print(result)
+
+
+# main()
+
+from library_management import Book, Library
 
 
 def main():
-    numerator = float(input("enter numerator: "))
-    denominator = float(input("enter denominator: "))
+    # Setup a small library
+    library = Library()
+    library.add_book(Book("Brave New World", "Aldous Huxley"))
+    library.add_book(Book("1984", "George Orwell"))
 
-    result = safe_divide(numerator, denominator)
+    # Initial list of available books
+    print("Available books after setup:")
+    library.list_available_books()
 
-    print(result)
+    # Simulate checking out a book
+    library.check_out_book("1984")
+    print("\nAvailable books after checking out '1984':")
+    library.list_available_books()
+
+    # Simulate returning a book
+    library.return_book("1984")
+    print("\nAvailable books after returning '1984':")
+    library.list_available_books()
 
 
-main()
+if __name__ == "__main__":
+    main()
