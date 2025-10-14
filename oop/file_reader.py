@@ -5,9 +5,6 @@ class FileHandler:
     def read_data(self):
         with open(self.filename, 'r') as file:
             return file.read()
-    
-
-    def instantiate_from_csv
 
 
 # Usage
