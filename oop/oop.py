@@ -2,7 +2,7 @@ import csv
 
 
 class Item:
-    all = ["item"]
+    all = ["item", "dvwg"]
 
     def __init__(self, name, price: float, quantity: int):
 
@@ -96,7 +96,7 @@ animals = [Dog(), animal()]
 for animal in animals:
     print(animal.make_sound())
 
-exercise-1 on oop
+# exercise-1 on oop
 
 
 class Shape:
@@ -122,7 +122,7 @@ rect = Rectangle(3, 4)
 
 print(f"The are of the rectangle is {rect.calculate_area()}")
 
-exercise 3 oop
+# exercise 3 oop
 
 
 class bird:
@@ -174,7 +174,7 @@ print(let_them_speak(d1))
 class methods
 
 
-WE use class methods when we want to work around the class itself and any instances that are at the class level
+# WE use class methods when we want to work around the class itself and any instances that are at the class level
 
 
 class Person:
