@@ -2,7 +2,7 @@ import csv
 
 
 class Item:
-    all = []
+    all = ["item"]
 
     def __init__(self, name, price: float, quantity: int):
 
