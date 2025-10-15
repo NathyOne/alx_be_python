@@ -35,10 +35,9 @@ class Library:
             self.books.append(book)
 
     def list_books(self):
-        print("=== LIBRARY COLLECTION ===")
         for zbook in self.books:
-            print(f"{zbook}")
+            print(f"Book: {zbook}")
         for ebook in self.ebooks:
-            print(f"{ebook}")
+            print(f"EBook: {ebook}")
         for pbook in self.print_books:
-            print(f"{pbook}")
+            print(f"PrintBook: {pbook}")
