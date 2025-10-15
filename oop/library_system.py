@@ -22,23 +22,23 @@ class PrintBook(Book):
 class Library:
 
     def __init__(self):
-        self.book = []
-        self.ebook = []
-        self.print_book = []
+        self.books = []
+        self.ebooks = []
+        self.print_books = []
 
     def add_book(self, book):
         if isinstance(book, EBook):
-            self.ebook.append(book)
+            self.ebooks.append(book)
         elif isinstance(book, PrintBook):
-            self.print_book.append(book)
+            self.print_books.append(book)
         else:
-            self.book.append(book)
+            self.books.append(book)
 
     def list_books(self):
         print("=== LIBRARY COLLECTION ===")
-        for zbook in self.book:
+        for zbook in self.books:
             print(f"{zbook}")
-        for ebook in self.ebook:
+        for ebook in self.ebooks:
             print(f"{ebook}")
-        for pbook in self.print_book:
+        for pbook in self.print_books:
             print(f"{pbook}")
